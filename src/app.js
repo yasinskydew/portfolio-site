@@ -33,6 +33,7 @@ app.get('/contacts', (req, res) => {
 
 app.get('/works', (req, res) => {
     res.render('works')
+
 })
 
 app.get('*', (req, res) => {
