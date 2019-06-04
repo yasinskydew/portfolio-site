@@ -14,21 +14,30 @@
     {{>header}} 
     <main>
     <div class="container">
-      <ul class="contacts-list">
-        <li class="contacts-item row">
-          <div class="col-6 contacts-preview">
-            <img src="/image/slider-1.jpg" alt="">
-              <ul class="contacts-list">
-                <li class="contacts-item">Velcom +375 44 754 78 39</li>
-                <li class="contacts-item">LinkedIn <a href="#"></a></li>
-                <li class="contacts-item">Telegramm <a href="#"></a></li>
-              </ul>
+        <div class="contacts-content row">
+          <div class="col-md-6 contacts-preview">
+            <p class="feedback-word">Call me <br> please</p>
+            <ul class="contacts-list">
+              <li class="contacts-item">Mobile (telegram): +375 44 754 78 39</li>
+              <li class="contacts-item">LinkedIn: uladzimir-yasinski-810771173</li>
+              <li class="contacts-item">Skype: live:yasinski2015</li>
+              <li class="contacts-item">E-mail: yasinsky2015@gmail.com</li>
+            </ul>
           </div>
-          <div class="col-6 contacts-form">
-
+          <div class="col-md-6 contacts-form">
+              <p class="feedback">   Please get feedback. Your opinion is very important for me:</p>
+              <form class="feedback-form" action="#" method="post">
+                <label class="form-label" for="email">Email:</label>
+                <input type="email" name="user_email" id="email" placeholder="your e-mail" required autocomplete="off" autofocus>
+                <label  class="form-label" for="comment">Comment</label>
+                <textarea name="user_comment" id="comment" cols="50" rows="10" required></textarea>
+                <div class="button-wrapper">
+                  <input class="btn form-btn" type="reset" value="Reset">
+                  <input class="btn form-btn" type="submit" value="submit">
+                </div>
+              </form>
           </div>
-        </li>
-      </ul>
+        </div>
     </div>
     </main>
      {{>footer}}

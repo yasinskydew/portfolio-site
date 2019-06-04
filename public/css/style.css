@@ -69,10 +69,13 @@ h2{
     font-size: 30px;
     color: white;
 }
+.about-content{
+    margin-top:40px;
+}
 
 .main-content{
     padding-top: 40px;
-    background-color:hsl(0, 0%, 97%);
+    background-color: rgb(247, 247, 247, 0.6);
     margin:auto;
     padding-left: 40px;
     padding-bottom: 20px;
@@ -133,6 +136,8 @@ h2{
     min-height: 120px;
 }
 
+
+
 .copyright{
     padding-right: 15px;
     color: #FFFFFF;
@@ -164,6 +169,7 @@ h2{
     background-color: rgb(247, 247, 247, 0.6);
     padding:30px;
     list-style: none;
+    margin-top:40px;
 }
 
 
@@ -208,6 +214,60 @@ h2{
     padding-left: 15px;
 }
 
+/* contact page style */
+.contacts-content{
+    padding:40px 0;
+}
+
+.contacts-preview{
+    background-color: rgb(247, 247, 247, 0.6);
+}
+.contacts-list {
+    margin:10px;
+    padding: 0;
+    list-style: none;
+}
+
+.feedback-word{
+    font-size: 60px;
+    font-style: italic;
+    padding-left: 28px;
+    padding-bottom:35px;
+}
+.contacts-item{
+    font-size:22px;
+    margin: 15px;
+}
+.button-wrapper{
+    display: flex;
+    justify-content:flex-end;
+}
+.form-btn{
+    text-transform: uppercase;
+    margin-left:15px;
+    padding-top:6px;
+    width: 100px;
+}
+.form-label {
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0; 
+}   
+.feedback{
+    width:70%;
+    font-size:24px;
+    text-indent: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.feedback-form {
+    margin: 0 auto;
+}
+#email,
+#comment{
+    width:100%;
+}
 
 @media (min-width:576px) {
     .hello-title{
@@ -221,6 +281,11 @@ h2{
 
     .logo {
         display: block;
+    }
+
+    .feedback-form {
+        margin: 0 auto;
+        width: 70%;
     }
 
 }
