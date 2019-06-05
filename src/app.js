@@ -4,7 +4,7 @@ const hbs = require('hbs')
 
 app = express()
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT 
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
@@ -36,6 +36,10 @@ app.get('/works', (req, res) => {
 
 })
 
+app.post('/test', (req, res) => {
+    res.send()
+})
+
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
@@ -45,5 +49,5 @@ app.get('*', (req, res) => {
 
 
 app.listen(port, () => {
-    console.log('server is up on port ' + port)
+    console.log('port on ' + port)
 })

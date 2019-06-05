@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/app.js -e js, hbs",
-    "start": "node src/app.js -e, hbs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "env-cmd -f ./config/dev.env nodemon src/app.js -e js, hbs",
+    "start": "node src/app.js -e, hbs"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
     "express": "^4.17.1",
     "hbs": "^4.0.4",
+    "sendgrid": "^5.2.3"
+  },
+  "devDependencies": {
+    "env-cmd": "^9.0.2",
     "nodemon": "^1.19.1"
   }
 }

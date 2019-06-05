@@ -26,14 +26,14 @@
           </div>
           <div class="col-md-6 contacts-form">
               <p class="feedback">   Please get feedback. Your opinion is very important for me:</p>
-              <form class="feedback-form" action="#" method="post">
+              <form id="feedback-form" class="feedback-form" action="/test" method="post">
                 <label class="form-label" for="email">Email:</label>
                 <input type="email" name="user_email" id="email" placeholder="your e-mail" required autocomplete="off" autofocus>
                 <label  class="form-label" for="comment">Comment</label>
                 <textarea name="user_comment" id="comment" cols="50" rows="10" required></textarea>
                 <div class="button-wrapper">
                   <input class="btn form-btn" type="reset" value="Reset">
-                  <input class="btn form-btn" type="submit" value="submit">
+                  <input id="form-submit-button" class="btn form-btn" type="submit" value="submit">
                 </div>
               </form>
           </div>
