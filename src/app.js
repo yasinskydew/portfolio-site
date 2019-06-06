@@ -42,7 +42,7 @@ app.get('/works', (req, res) => {
 
 app.post('/test', (req, res) => {
     const emailData = req.body
-    // sendFeedbackEmail(emailData.user_email, emailData.user_comment)
+    sendFeedbackEmail(emailData.user_email, emailData.user_comment)
     res.render('getEmail')
     
 })

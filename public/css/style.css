@@ -54,8 +54,10 @@ h2{
     background-color: #BBBBBB;
 }
 
-.main-page { 
+.main-page {
+    background-color: rgb(29, 26, 26);
     background-image: url(.././image/background.jpg);
+    background-repeat: no-repeat;
 }
 
 .hello-title{
@@ -70,8 +72,10 @@ h2{
     color: white;
 }
 .about-content{
+    min-height: calc(100vh - 215px);
     margin-top:40px;
 }
+
 
 .main-content{
     padding-top: 40px;
@@ -216,6 +220,7 @@ h2{
 
 /* contact page style */
 .contacts-content{
+    min-height: calc(100vh - 175px);
     padding:40px 0;
 }
 
