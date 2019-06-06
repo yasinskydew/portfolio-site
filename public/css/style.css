@@ -236,8 +236,9 @@ h2{
 .feedback-word{
     font-size: 60px;
     font-style: italic;
-    padding-left: 28px;
     padding-bottom:35px;
+    padding-top:15px;
+    text-align: center;
 }
 .contacts-item{
     font-size:22px;
@@ -258,12 +259,15 @@ h2{
     text-transform: uppercase;
     margin: 10px 0; 
 }   
-.feedback{
+.feedback-text{
+    text-align: center;
     width:70%;
     font-size:24px;
     text-indent: 15px;
     display: block;
     margin: 0 auto;
+    padding-top:15px;
+    min-width:300px;
 }
 
 .feedback-form {
@@ -273,6 +277,7 @@ h2{
 #comment{
     width:100%;
 }
+
 
 .email-container{
     max-width: 250px;
@@ -308,6 +313,13 @@ h2{
     .feedback-form {
         margin: 0 auto;
         width: 70%;
+    }
+    .feedback-word{
+        text-align: left;
+        padding-left: 28px;
+    }
+    .feedback-text{
+        text-align: left;
     }
 
 }
