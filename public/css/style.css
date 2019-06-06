@@ -269,6 +269,23 @@ h2{
     width:100%;
 }
 
+.email-container{
+    max-width: 250px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 247, 247, 0.6);
+    padding: 30px;
+    margin: 40px auto;
+
+}
+
+.email-content{
+    text-align: center;
+}
+
 @media (min-width:576px) {
     .hello-title{
         margin-top: 50px;

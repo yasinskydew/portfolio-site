@@ -1,8 +1,12 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
+const bodyParser = require('body-parser')
+const { sendFeedbackEmail } = require('../emails/feedbackEmail')
 
 app = express()
+
+app.use(bodyParser.urlencoded({extended: true}))
 
 const port = process.env.PORT 
 
@@ -37,7 +41,10 @@ app.get('/works', (req, res) => {
 })
 
 app.post('/test', (req, res) => {
-    res.send()
+    const emailData = req.body
+    // sendFeedbackEmail(emailData.user_email, emailData.user_comment)
+    res.render('getEmail')
+    
 })
 
 app.get('*', (req, res) => {
