@@ -61,6 +61,7 @@ h2{
 }
 
 .main-page {
+    background-size:100%;
     background-color: rgb(29, 26, 26);
     background-image: url(.././image/background.jpg);
     background-repeat: no-repeat;
@@ -284,7 +285,7 @@ h2{
 }
 
 .feedback-image {
-    max-width: 540px;
+    width:100%;
 }
 
 .feedback-form {
